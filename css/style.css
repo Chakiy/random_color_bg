@@ -1,1 +1,55 @@
 @import url(./reset.css);
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block, h1 , h2  {
+    /* border: 1px solid black; */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+h1 {
+    animation: colorChange 5s infinite alternate;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #faa;
+    border:1px solid #f4c;
+    padding: 15px;
+
+}
+
+
+/* ANIMATION */
+
+@keyframes colorChange {
+    0% {
+        color: rgb(250, 58, 58);
+    }
+    20% {
+        color: rgb(250, 151, 58);
+    }
+    40% {
+        color: rgb(250, 247, 58);
+    }
+    60% {
+        color: rgb(144, 250, 58);
+    }
+    80% {
+        color: rgb(58, 250, 186);
+    }
+    100% {
+        color: rgb(71, 58, 250);
+    }
+}
